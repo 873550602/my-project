@@ -42,10 +42,11 @@
 			<Col span="6" order="2">3 | order-2</Col>
 			<Col span="6" order="1">4 | order-1</Col>
 		</Row>
+		<alert></alert>
 	</div>
 </template>
 <script>
 	export default {
-
+		import MyTitle from './customComponents/myTitle'
 	}
 </script>
