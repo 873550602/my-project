@@ -1,6 +1,3 @@
-<style lang="less">
-	@import '../../static/css/com.less';
-</style>
 <style type="text/css">
 	.router-link-active span,
 	.router-link-active i{
