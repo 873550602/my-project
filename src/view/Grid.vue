@@ -105,6 +105,92 @@
 			<Col span="4">col-4</Col>
 			<Col span="4">col-4</Col>
 		</Row>
+		<br>
+		<Row>
+			<Col span="24" class="base-title">子元素等宽排列</Col>
+		</Row>
+		<Row type="flex" justify="space-between" class="code-row-bg">
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">子元素分散排列</Col>
+		</Row>
+		<Row type="flex" justify="space-around" class="code-row-bg">
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+			<Col span="4">col-4</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">顶部对齐</Col>
+		</Row>
+		<Row type="flex" justify="center" align="top" class="code-row-bg">
+			<Col span="4">
+			<p style="height: 80px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 30px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 100px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 60px">col-4</p>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">底部对齐</Col>
+		</Row>
+		<Row type="flex" justify="center" align="bottom" class="code-row-bg">
+			<Col span="4">
+			<p style="height: 80px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 30px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 100px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 60px">col-4</p>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">居中对齐</Col>
+		</Row>
+		<Row type="flex" justify="center" align="middle" class="code-row-bg">
+			<Col span="4">
+			<p style="height: 80px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 30px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 100px">col-4</p>
+			</Col>
+			<Col span="4">
+			<p style="height: 60px">col-4</p>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">响应式布局</Col>
+		</Row>
+		<Row>
+			<Col :xs="2" :sm="4" :md="6" :lg="8">Col</Col>
+			<Col :xs="20" :sm="16" :md="12" :lg="8">Col</Col>
+			<Col :xs="2" :sm="4" :md="6" :lg="8">Col</Col>
+		</Row>
+		<Row>
+			<Col span="24" class="base-title">其它属性的响应式</Col>
+		</Row>
+		<Row>
+			<Col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">Col</Col>
+			<Col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 2 }">Col</Col>
+			<Col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">Col</Col>
+		</Row>
 	</div>
 </template>
 
@@ -122,12 +208,20 @@
 			myTitle
 		},
 		beforeCreate() {},
-		created() {},
+		created() {
+			
+		},
 		beforeMount() {},
-		mounted() {},
-		beforeUpdate() {},
+		mounted() {
+			
+		},
+		beforeUpdate() {
+			
+		},
 		updated() {},
-		beforeDestroy() {},
+		beforeDestroy() {
+			this.$store.commit('say');
+		},
 		destroyed() {}
 	}
 </script>
