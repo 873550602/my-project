@@ -7,7 +7,7 @@
 		</Row>
 		<div class="layout">
 			<Layout class="layout">
-				<Header class="layout-header">Header</Header>
+				<Header class="layout-header">{{'Header' | upperCase}}</Header>
 				<Content class="layout-content">Content</Content>
 				<Footer class="layout-footer" >Footer</Footer>
 			</Layout>
@@ -47,7 +47,8 @@
 	export default {
 		name: 'layout',
 		data() {
-			return {}
+			return {
+			}
 		},
 		methods: {},
 		computed: {},
